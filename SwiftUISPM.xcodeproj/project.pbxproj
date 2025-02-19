@@ -11,6 +11,9 @@
 		4D497FB72D663757002AA28C /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4D497FB62D663757002AA28C /* KeychainSwift */; };
 		4D497FBC2D665006002AA28C /* LottieAnimationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D497FBB2D665005002AA28C /* LottieAnimationDemo.swift */; };
 		4D497FC32D665328002AA28C /* star.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D497FC22D665328002AA28C /* star.json */; };
+		4D8C4FBC2D666015006C2C8A /* SwiftfulUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4D8C4FBB2D666015006C2C8A /* SwiftfulUI */; };
+		4D8C4FBE2D6660B8006C2C8A /* SwiftUIDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8C4FBD2D6660B8006C2C8A /* SwiftUIDemo.swift */; };
+		4D8C4FCB2D66702B006C2C8A /* SwiftfulRouting in Frameworks */ = {isa = PBXBuildFile; productRef = 4D8C4FCA2D66702B006C2C8A /* SwiftfulRouting */; };
 		4D9F082D2D65BEE80057C59B /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9F082C2D65BEE40057C59B /* ImageLoader.swift */; };
 		4D9F082F2D65C0F80057C59B /* KingFIsherDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9F082E2D65C0F80057C59B /* KingFIsherDemo.swift */; };
 		4D9F08322D65C1480057C59B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4D9F08312D65C1480057C59B /* Kingfisher */; };
@@ -40,6 +43,7 @@
 		4D497FB32D663702002AA28C /* KeyChainDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainDemo.swift; sourceTree = "<group>"; };
 		4D497FBB2D665005002AA28C /* LottieAnimationDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimationDemo.swift; sourceTree = "<group>"; };
 		4D497FC22D665328002AA28C /* star.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = star.json; sourceTree = "<group>"; };
+		4D8C4FBD2D6660B8006C2C8A /* SwiftUIDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemo.swift; sourceTree = "<group>"; };
 		4D9F082C2D65BEE40057C59B /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		4D9F082E2D65C0F80057C59B /* KingFIsherDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingFIsherDemo.swift; sourceTree = "<group>"; };
 		4DA7821D2D64B33200400B2C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -54,8 +58,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D497FB72D663757002AA28C /* KeychainSwift in Frameworks */,
+				4D8C4FCB2D66702B006C2C8A /* SwiftfulRouting in Frameworks */,
 				4D9F08322D65C1480057C59B /* Kingfisher in Frameworks */,
 				4DA7821C2D64B30D00400B2C /* SDWebImageSwiftUI in Frameworks */,
+				4D8C4FBC2D666015006C2C8A /* SwiftfulUI in Frameworks */,
 				4DD0C3012D665A2300E7D0F1 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +102,14 @@
 			path = Lottie;
 			sourceTree = "<group>";
 		};
+		4D8C4FB92D665F55006C2C8A /* UIHelper */ = {
+			isa = PBXGroup;
+			children = (
+				4D8C4FBD2D6660B8006C2C8A /* SwiftUIDemo.swift */,
+			);
+			path = UIHelper;
+			sourceTree = "<group>";
+		};
 		4D9F082B2D65BEBD0057C59B /* ImageLoading */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +131,7 @@
 		4DA782222D64B33200400B2C /* SwiftUISPM */ = {
 			isa = PBXGroup;
 			children = (
+				4D8C4FB92D665F55006C2C8A /* UIHelper */,
 				4D497FBA2D664D15002AA28C /* Lottie */,
 				4D497FB22D6636D1002AA28C /* Keychains */,
 				4D9F082B2D65BEBD0057C59B /* ImageLoading */,
@@ -149,6 +164,8 @@
 				4D9F08312D65C1480057C59B /* Kingfisher */,
 				4D497FB62D663757002AA28C /* KeychainSwift */,
 				4DD0C3002D665A2300E7D0F1 /* Lottie */,
+				4D8C4FBB2D666015006C2C8A /* SwiftfulUI */,
+				4D8C4FCA2D66702B006C2C8A /* SwiftfulRouting */,
 			);
 			productName = SwiftUISPM;
 			productReference = 4D32EF9E2D622EBA001EBF70 /* SwiftUISPM.app */;
@@ -183,6 +200,8 @@
 				4D9F08302D65C1480057C59B /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				4D497FB52D663757002AA28C /* XCRemoteSwiftPackageReference "keychain-swift" */,
 				4DD0C2FF2D665A2300E7D0F1 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				4D8C4FBA2D666015006C2C8A /* XCRemoteSwiftPackageReference "SwiftfulUI" */,
+				4D8C4FC92D66702B006C2C8A /* XCRemoteSwiftPackageReference "SwiftfulRouting" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4D32EF9F2D622EBA001EBF70 /* Products */;
@@ -218,6 +237,7 @@
 				4D9F082F2D65C0F80057C59B /* KingFIsherDemo.swift in Sources */,
 				4D497FB42D663702002AA28C /* KeyChainDemo.swift in Sources */,
 				4D9F082D2D65BEE80057C59B /* ImageLoader.swift in Sources */,
+				4D8C4FBE2D6660B8006C2C8A /* SwiftUIDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +453,22 @@
 				version = 24.0.0;
 			};
 		};
+		4D8C4FBA2D666015006C2C8A /* XCRemoteSwiftPackageReference "SwiftfulUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulUI";
+			requirement = {
+				kind = exactVersion;
+				version = 1.2.0;
+			};
+		};
+		4D8C4FC92D66702B006C2C8A /* XCRemoteSwiftPackageReference "SwiftfulRouting" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulRouting";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.6;
+			};
+		};
 		4D9F08302D65C1480057C59B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher";
@@ -464,6 +500,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4D497FB52D663757002AA28C /* XCRemoteSwiftPackageReference "keychain-swift" */;
 			productName = KeychainSwift;
+		};
+		4D8C4FBB2D666015006C2C8A /* SwiftfulUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D8C4FBA2D666015006C2C8A /* XCRemoteSwiftPackageReference "SwiftfulUI" */;
+			productName = SwiftfulUI;
+		};
+		4D8C4FCA2D66702B006C2C8A /* SwiftfulRouting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D8C4FC92D66702B006C2C8A /* XCRemoteSwiftPackageReference "SwiftfulRouting" */;
+			productName = SwiftfulRouting;
 		};
 		4D9F08312D65C1480057C59B /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
