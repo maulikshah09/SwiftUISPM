@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUISPMApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SDWebImage()
         }
     }
 }
