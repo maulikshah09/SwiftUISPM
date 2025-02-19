@@ -6,13 +6,30 @@
 //
 
 import SwiftUI
+import Lottie
 
-struct LottieAnimationDemo: View {
+// .json <- old
+// .dotlotie <- new
+
+struct LottieHealperView: View {
+    var fileName = "star.json"
+    var contentMode : UIView.ContentMode = .scaleToFill
+    var playMode : LottieLoopMode = .playOnce
+    var onAnimationdidFinish :(() -> Void)? = nil
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        LottieView(animation: .named(fileName))
+            .configure({ lottieAnimationView in
+                lottieAnimationView.contentMode = contentMode
+            })
+            .playbackMode(.playing(.toProgress(1, loopMode: .playOnce)))
+            .animationDidFinish { completed in
+                // got next screen or any operation
+                onAnimationdidFinish?()
+            }
     }
 }
 
 #Preview {
-    LottieAnimationDemo()
+    LottieHealperView()
 }
